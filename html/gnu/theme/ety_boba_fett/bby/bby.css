@@ -1,0 +1,71 @@
+body {
+    font-family: 'Gasoek One';
+    font-weight: 400;
+}
+
+.blackMode {
+
+    /* background-color: black; */
+    color: black;
+}
+
+#jh_gnb .navbar-brand {
+    display: block;
+
+    max-width: 134px !important;
+
+    width: 10vw;
+}
+
+#jh_gnb .navbar-brand:after {
+
+    content: "";
+    display: block;
+    height: 0;
+    padding-top: 27%;
+    background-image: url("http://www.jawsfood.co.kr/images/common/logo2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.blackMode #jh_gnb .navbar-brand:after {
+    background-image: url("http://www.jawsfood.co.kr/images/common/logo1.png");
+}
+
+.blackMode #jh_gnb #navbarDropdownBlog {
+    color: black;
+}
+
+.lat .blue {
+    background-color: blue;
+}
+
+.lat .lightblue {
+    background-color: lightblue;
+}
+
+.lat .darkblue {
+    background-color: darkblue;
+}
+
+.subpage .navbar {
+
+    background-color: black;
+    max-height: 100px;
+}
+
+.mainpage footer {
+    background-color: goldenrod !important;
+}
+
+
+i.fa+.sound_only {
+
+    position: unset;
+    padding: 0 8px !important;
+    font-size: 14px;
+    line-height: 1;
+    overflow: visible !important;
+
+}
