@@ -135,6 +135,18 @@ http://ety.kr/board/qa
 		echo latest('boba_info','main_boba_info',8,100);
 	?>
 
+	<?php
+		echo latest('sns','main_sns_banner',3,100);
+
+		
+	?>
+	<div class= "container-fluid" style = "padding:0;margin-left:500px ;">
+
+		<?php echo latest('youtube','main_youtube',2,100); ?>
+
+	</div>
+		
+
 </div><!-- /container -->
 
 
@@ -179,12 +191,14 @@ http://ety.kr/board/qa
 		<span class="center-line"></span>
 	</div>
 
-	<?php echo latest('gallery_magnific_popup', 'store_info',10, 10); ?>
+
 	<!-- 
 	LATEST : pic_basic_company 
 	글자수 조정은 해당 스킨에서 해주세요~
 	-->
-	<?php echo latest('theme/pic_basic_company', 'gallery', 12, 24); ?>
+	<?php echo latest('theme/pic_basic_copy', 'main_sns_banner', 12, 24); ?>
+
+	
 </div>
 
 

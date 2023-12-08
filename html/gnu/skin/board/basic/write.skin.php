@@ -7,7 +7,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 <section id="bo_w">
     <h2 class="sound_only"><?php echo $g5['title'] ?></h2>
-
+    
     <!-- 게시물 작성/수정 시작 { -->
     <form name="fwrite" id="fwrite" action="<?php echo $action_url ?>" onsubmit="return fwrite_submit(this);" method="post" enctype="multipart/form-data" autocomplete="off" style="width:<?php echo $width; ?>">
     <input type="hidden" name="uid" value="<?php echo get_uniqid(); ?>">
@@ -126,6 +126,16 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         </div>
         
     </div>
+  
+    <div class= "write_div">
+        <label for ="sns">SNS</label>
+        <input type="text" id="sns" name="wr_1" size="50" class="frm_input full_input">
+    </div>
+    <div class= "write_div">
+        <label for ="snsClass">SNSClass</label>
+        <input type="text" id="snsClass" name="wr_2" size="50" class="frm_input full_input">
+    </div>
+
 
     <?php for ($i=1; $is_link && $i<=G5_LINK_COUNT; $i++) { ?>
     <div class="bo_w_link write_div">
@@ -134,6 +144,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     </div>
     <?php } ?>
 
+    
     <?php for ($i=0; $is_file && $i<$file_count; $i++) { ?>
     <div class="bo_w_flie write_div">
         <div class="file_wr write_div">

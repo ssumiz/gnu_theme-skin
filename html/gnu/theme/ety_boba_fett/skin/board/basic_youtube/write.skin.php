@@ -165,7 +165,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 						</div>
 						
 					</div>
+					
+					<div>
+   				    <label for ="sns">유튜브 영상</label>
+    			    <input type="text" id="sns" name="wr_1" size="50" class="frm_input full_input">
+  					  </div>
+ 			
 
+					
 					<?php for ($i=1; $is_link && $i<=G5_LINK_COUNT; $i++) { ?>
 					<div class="bo_w_link write_div">
 						<label for="wr_link<?php echo $i ?>"><i class="fa fa-link" aria-hidden="true"></i><span class="sound_only"> 링크  #<?php echo $i ?></span></label>
